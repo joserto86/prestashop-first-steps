@@ -1,0 +1,36 @@
+version: '3'
+services:
+  db:
+    image: 'mysql:5.7'
+    command: mysqld --character-set-server=utf8 --collation-server=utf8_bin --init-connect='SET NAMES UTF8;' --innodb-flush-log-at-trx-commit=0
+    hostname: database
+    environment:
+      MYSQL_ROOT_PASSWORD: farsa
+      MYSQL_DATABASE: prestashop 
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: farsa
+    volumes:
+      - ./docker/volumes/db/data:/var/lib/mysql
+    networks:
+      - irondev
+  web:
+    build:
+      context: ./
+    hostname: webapp
+    links:
+      - db:prestashopDEV
+    environment:
+      DATABASE_HOST: "prestashopDEV"
+    volumes:
+          - ./prestashop:/var/www/html/
+          - /etc/hosts:/etc/hosts
+    ports:
+           - 8098:80
+    depends_on: 
+      - db
+    networks:
+      - irondev
+
+networks:
+  irondev:
+    external: true

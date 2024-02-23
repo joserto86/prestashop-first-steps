@@ -1,0 +1,35 @@
+<?php //WebHelpers%255CWHCategoryFields%255CEntity%255CWHCategoryFieldsExtensionLang%2524extension
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Id'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Id')),
+        clone ($p['Doctrine\\ORM\\Mapping\\ManyToOne'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ManyToOne')),
+        clone ($p['Doctrine\\ORM\\Mapping\\JoinColumn'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\JoinColumn')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'targetEntity' => [
+                1 => 'WebHelpers\\WHCategoryFields\\Entity\\WHCategoryFieldsExtension',
+            ],
+            'inversedBy' => [
+                1 => 'extensionLangs',
+            ],
+            'name' => [
+                2 => 'id_extension',
+            ],
+            'referencedColumnName' => [
+                2 => 'id_extension',
+            ],
+            'nullable' => [
+                2 => false,
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+    ],
+    []
+); }];

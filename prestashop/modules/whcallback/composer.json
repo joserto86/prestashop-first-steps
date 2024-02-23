@@ -1,0 +1,27 @@
+{
+  "name": "webhelpers/whcallback",
+  "description": "Customer callback module for your front office",
+  "authors": [
+    {
+      "name": "Jose Alberto Hernán",
+      "email": "contact@domain.ext"
+    }
+  ],
+  "require": {
+    "php": ">=8.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "WebHelpers\\WHCallback\\": "src/"
+    },
+    "classmap": [
+      "whcallback.php"
+    ],
+    "exclude-from-classmap": []
+  },
+  "config": {
+    "preferred-install": "dist",
+    "prepend-autoloader": false
+  },
+  "type": "prestashop-module"
+}

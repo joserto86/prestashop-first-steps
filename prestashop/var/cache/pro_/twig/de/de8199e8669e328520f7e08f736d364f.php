@@ -1,0 +1,59 @@
+<?php
+
+use Twig\Environment;
+use Twig\Error\LoaderError;
+use Twig\Error\RuntimeError;
+use Twig\Extension\SandboxExtension;
+use Twig\Markup;
+use Twig\Sandbox\SecurityError;
+use Twig\Sandbox\SecurityNotAllowedTagError;
+use Twig\Sandbox\SecurityNotAllowedFilterError;
+use Twig\Sandbox\SecurityNotAllowedFunctionError;
+use Twig\Source;
+use Twig\Template;
+
+/* @Modules/ps_googleanalytics/views/img/checkout_icon.png */
+class __TwigTemplate_40fcad13515662f7a92320cafaee95c3 extends Template
+{
+    private $source;
+    private $macros = [];
+
+    public function __construct(Environment $env)
+    {
+        parent::__construct($env);
+
+        $this->source = $this->getSourceContext();
+
+        $this->parent = false;
+
+        $this->blocks = [
+        ];
+    }
+
+    protected function doDisplay(array $context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        // line 1
+        echo "âPNG
+
+\000\000\000
+IHDR\000\000\000<\000\000\000/\000\000\000∑aÃ\000\000&IDATx⁄Ì÷¨ùAƒÒS3jUäj˝€∞∂◊∂m€∂m€∂m€v∑ﬁtìΩ ˝∂û\t''˘=ÔìC%rã\"‚q(¬-RIÏ°ÍKﬂP‹S∂8oP_Z∆~∞•ÈRû±%5´Xo?Ñ“}OYOÿ≤ºGÈ¥≈dÉI{Ãn ¶H¥{÷Nªe˝”ÓYMØ5È0Ÿ5÷¢≤ƒ§√`óUt¬†≤ö^g–u%àP◊`◊˘eIKNKs1etu»CNÏÕCv°åé&óı6≠à0ı:Lx˚K‡∑Ç˙5˝ˇ∆_obSÖFt‡∞œ£˜L§1]∏h¨ÀiFs÷€i:“òâºGY{ùÓ¥¢Uà-ﬂCT6`?Ô¯Ì\"Øı∂Ï€ÅMz{Jºokgîµ˝ƒÚc?œ£/éÈ≠ôﬁ∫ÍmªﬁÚ†¨-iácÚ⁄zûS_“[#Ωu“€&ΩÂƒ˛-ã#ˆ∞…)ºO|ÖNN·>æ·¨N·Ç˛ˇŒ‡7˛ˇΩ]Ìﬁ*˛B+gp'ˇpgpˇp\$;Å_U¸á%N‡5(4r∑
+ßwgG‡ÆÁ#\"I‡0e4∑Âujjyù∂˘|ùI0°ˆ˜8>Øı∂P_o‘€c‚~€:¢å6NÅ2˙é±4¢=gçu!Mi∆Jc;N[1ñw(£i\$∏p
+Âao!XxößL\t6TˆÆ<ú‘S8π.x∆^íPBœ‡°¡1ô≈€∞—∑Ã&¶]¯Î8@eïI?#\000\000\000\000IENDÆB`Ç";
+    }
+
+    public function getTemplateName()
+    {
+        return "@Modules/ps_googleanalytics/views/img/checkout_icon.png";
+    }
+
+    public function getDebugInfo()
+    {
+        return array (  37 => 1,);
+    }
+
+    public function getSourceContext()
+    {
+        return new Source("", "@Modules/ps_googleanalytics/views/img/checkout_icon.png", "/var/www/html/modules/ps_googleanalytics/views/img/checkout_icon.png");
+    }
+}
